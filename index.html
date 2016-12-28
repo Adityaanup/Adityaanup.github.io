@@ -9,100 +9,116 @@
 
     <title>Aditya Anup : Full Stack Developer</title>
 
-    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
     <link href="css/animations.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
 
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
-    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
 </head>
 
-<body>
-    <!-- Side Menu -->
-    <a id="menu-toggle" href="#" class="btn btn-primary btn-lg toggle"><i class="fa fa-reorder"></i></a>
-    <div id="sidebar-wrapper">
-        <ul class="sidebar-nav">
-            <a id="menu-close" href="#" class="btn btn-default btn-lg pull-right toggle" onClick="ga('send', '_trackEvent', 'Navbar', 'Toggle', 'Navbar toggle');"><i class="fa fa-times"></i></a>
-<li class="sidebar-brand"><a href="#top">Alexander Mistakidis</a>
-</li>
-<li>
-    <a href="#about" onClick="ga('send', '_trackEvent', 'Navbar', 'About');">About</a>
-</li>
-<li>
-    <a href="#portfolio" onClick="ga('send', '_trackEvent', 'Navbar', 'Portfolio');">Portfolio</a>
-</li>
-<li>
-    <a href="#contact" onClick="ga('send', '_trackEvent', 'Navbar', 'Contact');">Contact</a>
-</li>
-</ul>
-</div>
-<!-- /Side Menu -->
+<body id="top" data-spy="scroll" data-target=".navbar-fixed-top">
+    <!-- Navigation -->
+    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                    <i class="fa fa-bars" aria-hidden="true"></i>
+                </button>
+                <a class="navbar-brand page-scroll" href="#top">
+                    <i class="fa fa-play-circle"></i> <span class="light">Aditya</span> Anup
+                </a>
+            </div>
 
-<!-- Full Page Image Header Area -->
-<div id="top" class="header">
-    <div class="vert-text">
-        <div class="expandUp">
-            <h1>
-                <div>Hello,</div>
-                <span class="long-word">I am</span> Aditya Anup.
-            </h1>
-            <h3>Cutting edge web geek. Startup fanatic. Computer Science @Waterloo.</h3>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+                <ul class="nav navbar-nav">
+                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                    <li class="hidden">
+                        <a href="#top"></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#about">About</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#portfolio">Portfolio</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
         </div>
-        <ul class="list-inline spaced">
-            <li>
-                <a href="https://github.com/adityaanup" target="_blank" title="Github" alt="Github" onClick="ga('send', '_trackEvent', 'Links', 'Github', 'Github top');"><i class="fa fa-github fa-3x"></i></a>
-</li>
-<li>
-    <a href="http://stackoverflow.com/users/6218935/aditya-anup" target="_blank" title="Stackoverflow" alt="Stackoverflow"
-        onClick="ga('send', '_trackEvent', 'Links', 'Stackoverflow', 'Stackoverflow top');"><i class="fa fa-stack-overflow fa-3x"></i></a>
-</li>
-<li>
-    <a href="https://in.linkedin.com/in/adityaanup" target="_blank" title="LinkedIn" alt="LinkedIn" onClick="ga('send', '_trackEvent', 'Links', 'LinkedIn', 'LinkedIn top');"><i class="fa fa-linkedin fa-3x"></i></a>
-</li>
-<li>
-    <a href="mailto:emailadityyanup@gmail.com" title="Email me" alt="Email me" target="_blank" onClick="ga('send', '_trackEvent', 'Links', 'Email', 'Email top');"><i class="fa fa-envelope-o fa-3x"></i></a>
-</li>
-<li>
-    <a href="resume.pdf" target="_blank" class="resume space-m" onClick="ga('send', '_trackEvent', 'Links', 'Resume', 'Resume top');">Resume</a>
-</li>
-</ul>
-<a href="#about" class="btn btn-default btn-lg call-to" onClick="ga('send', '_trackEvent', 'Links', 'What else');">What else?</a>
+        <!-- /.container -->
+    </nav>
 
-</div>
 
-</div>
-<!-- /Full Page Image Header Area -->
+    <!-- Full Page Image Header Area -->
+    <div class="header">
+        <div class="vert-text">
+            <div class="expandUp">
+                <h1>
+                    <div>Hello,</div>
+                    <span class="long-word">I am</span> Aditya Anup.
+                </h1>
+                <h3>passionate Java Software Engineer. Cutting edge web geek. Startup fanatic.</h3>
+            </div>
+            <ul class="list-inline spaced">
+                <li>
+                    <a href="https://github.com/adityaanup" target="_blank" title="Github" alt="Github"><i class="fa fa-github fa-3x"></i></a>
+                </li>
+                <li>
+                    <a href="http://stackoverflow.com/users/6218935/aditya-anup" target="_blank" title="Stackoverflow" alt="Stackoverflow"><i class="fa fa-stack-overflow fa-3x"></i></a>
+                </li>
+                <li>
+                    <a href="https://in.linkedin.com/in/adityaanup" target="_blank" title="LinkedIn" alt="LinkedIn"><i class="fa fa-linkedin fa-3x"></i></a>
+                </li>
+                <li>
+                    <a href="mailto:emailadityyanup@gmail.com" title="Email me" alt="Email me" target="_blank"><i class="fa fa-envelope-o fa-3x"></i></a>
+                </li>
+                <li>
+                    <a href="#" target="_blank" class="resume space-m">Resume</a>
+                </li>
+            </ul>
+            <a href="#about" class="btn btn-circle call-to"><i class="fa fa-angle-double-down animated"></i></a>
 
-<!-- Intro -->
-<div id="about" class="intro">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-2  col-md-offset-2 text-center">
-                <div class="pixelMe toSlideRight" /></div>
         </div>
-        <div class="col-md-6 text-center">
-            <h2>I love to create.</h2>
-            <p class="lead">I love to create minimal and impactful user experiences. As a empathetic, curious thinker and a voracious learner,
-                I'm passionate about collaborating on innovation.</p>
-        </div>
+
     </div>
-    <div class="row">
-        <div class="col-md-8 col-md-offset-2 text-center">
-            <h3>Technical Summary</h3>
-            <hr>
-            <dl class="dl-horizontal lead">
-                <dt>Web Development</dt>
-                <dd>HTML 5, CSS 3, Sass, Bootstrap, JavaScript, CoffeeScript, jQuery, Angular JS, Backbone, underscore, PHP,
-                    node.js
-                </dd>
-                <dt>Other Languages</dt>
-                <dd>Objective-C, Python, Java, C++, C#, Bash script</dd>
-                <dt>Databases</dt>
-                <dd>MySQL, MongoDB, Parse</dd>
-                <dt>Design</dt>
-                <dd>Photoshop, Sketch, Illustrator, Blender</dd>
-            </dl>
-            <a href="#contact" onClick="ga('send', '_trackEvent', 'Links', 'See more');">See more <i class="fa fa-level-down"></i></a>
+    <!-- /Full Page Image Header Area -->
+
+    <!-- Intro -->
+    <div id="about" class="intro">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-2  col-md-offset-2 text-center">
+                    <div class="pixelMe toSlideRight" /></div>
+            </div>
+            <div class="col-md-6 text-center">
+                <h2>I love to create.</h2>
+                <p class="lead">I love to create minimal and impactful user experiences. As a empathetic, curious thinker and a voracious
+                    learner, I'm passionate about collaborating on innovation.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2 text-center">
+                <h3>Technical Summary</h3>
+                <hr>
+                <dl class="dl-horizontal lead">
+                    <dt>Web Development</dt>
+                    <dd>HTML 5, CSS 3, Sass, Bootstrap, JavaScript, CoffeeScript, jQuery, Angular JS, Backbone, underscore, PHP,
+                        node.js
+                    </dd>
+                    <dt>Other Languages</dt>
+                    <dd>Objective-C, Python, Java, C++, C#, Bash script</dd>
+                    <dt>Databases</dt>
+                    <dd>MySQL, MongoDB, Parse</dd>
+                    <dt>Design</dt>
+                    <dd>Photoshop, Sketch, Illustrator, Blender</dd>
+                </dl>
+                <a href="#portfolio">See more <i class="fa fa-level-down"></i></a>
 </div>
 </div>
 </div>
@@ -181,30 +197,29 @@
     <div class="container">
         <div class="row">
             <div class="col-md-6 col-md-offset-3 text-center">
-                <a href="resume.pdf" target="_blank" class="btn btn-lg btn-primary resume toSlideDown" onClick="ga('send', '_trackEvent', 'Links', 'Resume', 'Resume bottom');">Resumé</a>
+                <a href="#" target="_blank" class="btn btn-lg btn-primary resume toSlideDown">Resume</a>
 
 <ul class="list-inline">
     <li>
-        <a href="https://github.com/aamistak" target="_blank" title="Github" alt="Github" onClick="ga('send', '_trackEvent', 'Links', 'Github', 'Github bottom');"><i class="fa fa-github fa-2x"></i></a>
+        <a href="https://github.com/adityaanup" target="_blank" title="Github" alt="Github"><i class="fa fa-github fa-2x"></i></a>
 </li>
 <li>
-    <a href="http://stackoverflow.com/users/1750362/alexander" target="_blank" title="Stackoverflow" alt="Stackoverflow" onClick="ga('send', '_trackEvent', 'Links', 'Stackoverflow', 'Stackoverflow bottom');"><i class="fa fa-stack-overflow fa-2x"></i></a>
+    <a href="http://stackoverflow.com/users/6218935/aditya-anup" target="_blank" title="Stackoverflow" alt="Stackoverflow"><i class="fa fa-stack-overflow fa-2x"></i></a>
 </li>
 <li>
-    <a href="http://ca.linkedin.com/pub/alexander-mistakidis/4a/975/252" target="_blank" title="LinkedIn" alt="LinkedIn" onClick="ga('send', '_trackEvent', 'Links', 'LinkedIn', 'LinkedIn bottom');"><i class="fa fa-linkedin fa-2x"></i></a>
+    <a href="https://in.linkedin.com/in/adityaanup" target="_blank" title="LinkedIn" alt="LinkedIn"><i class="fa fa-linkedin fa-2x"></i></a>
 </li>
 </ul>
 <ul class="list-unstyled size-m">
-    <li><i class="fa fa-map-marker"></i> Waterloo, Ontario</li>
-    <li><i class="fa fa-envelope-o"></i> <a href="mailto:mistakidis@gmail.com" target="_blank" onClick="ga('send', '_trackEvent', 'Links', 'Email', 'Email bottom');">mistakidis@gmail.com</a>
-</li>
+    <li><i class="fa fa-map-marker"></i> Bengaluru, India</li>
+    <li><i class="fa fa-envelope-o"></i> <a href="mailto:emailadityyanup@gmail.com" target="_blank">emailadityyanup@gmail.com</a></li>
 </ul>
 <div class="top-scroll">
     <a href="#top" title="Back to top" alt="Back to top"><i class="fa fa-angle-double-up scroll fa-4x"></i></a>
 </div>
 <hr>
 <p>Like the website?
-    <a href="https://github.com/aamistak" target="_blank" class="long-word" onClick="ga('send', '_trackEvent', 'Links', 'Fork it');">Star it on GitHub</a>
+    <a href="https://github.com/adityaanup" target="_blank" class="long-word">Star it on GitHub</a>
 </p>
 </div>
 </div>
@@ -214,7 +229,9 @@
 
 <script src="js/jquery.js"></script>
 <script src="js/jquery.scrolldepth.min.js"></script>
-<script src="js/bootstrap.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+<script src="js/grayscale.js"></script>
 <script src="js/main.js"></script>
 </body>
 
